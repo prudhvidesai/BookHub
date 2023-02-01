@@ -1,0 +1,91 @@
+.books-info-list-cont {
+  display: flex;
+  flex-direction: row;
+  margin-right: 130px;
+  margin-bottom: 24px;
+}
+.book-details-cont {
+  display: flex;
+  min-width: 158px;
+  max-width: 360px;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.cover-img {
+  width: 133px;
+  height: 155px;
+}
+.book-title {
+  width: 158px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* or 150% */
+
+  /* Light / blue-gray / 700 */
+
+  color: #334155;
+}
+.book-author {
+  width: 184px;
+  height: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0px;
+  /* identical to box height, or 114% */
+
+  /* Light / blue-gray / 600 */
+
+  color: #475569;
+}
+.book-rating {
+  width: 135px;
+  height: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 0px;
+  /* identical to box height, or 133% */
+
+  /* Light / blue-gray / 600 */
+
+  color: #475569;
+}
+.book-status {
+  width: 144px;
+  height: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 0px;
+  /* identical to box height, or 133% */
+
+  /* Light / blue-gray / 600 */
+
+  color: #475569;
+}
+.link-list {
+  text-decoration: none;
+}
+.all-star-img {
+  height: 12px;
+  position: relative;
+  top: 1px;
+  color: yellow;
+}
+.span-status {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 0px;
+  color: #0284c7;
+}

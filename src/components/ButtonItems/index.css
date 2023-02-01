@@ -1,0 +1,22 @@
+.options-btn {
+  min-width: 47px;
+  max-width: 136px;
+  height: 24px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  border: 1px solid #0284c7;
+  border-radius: 25px;
+  color: #0284c7;
+}
+.options-active-btn {
+  min-width: 47px;
+  max-width: 136px;
+  height: 24px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  background: #0284c7;
+  border: 1px solid #0284c7;
+  border-radius: 25px;
+  color: #ffffff;
+}

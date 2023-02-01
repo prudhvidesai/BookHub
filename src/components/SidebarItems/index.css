@@ -1,0 +1,31 @@
+.active-label-para {
+  position: relative;
+  left: 28px;
+  top: 80px;
+  border-width: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: transparent;
+  outline: none;
+  color: #0284c7;
+  cursor: pointer;
+}
+.label-para {
+  position: relative;
+  left: 28px;
+  top: 80px;
+  border-width: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  background-color: transparent;
+  outline: none;
+  color: #334155;
+  cursor: pointer;
+}

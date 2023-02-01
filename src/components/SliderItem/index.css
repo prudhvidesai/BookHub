@@ -1,0 +1,36 @@
+.lg-slider-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lg-book-img {
+  width: 250px;
+  height: 224px;
+}
+.lg-home-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  /* Light / blue-gray / 700 */
+  color: #334155;
+  width: 230px;
+  min-height: 0px;
+  max-height: 34px;
+}
+.lg-home-author {
+  width: 200px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 5px;
+  color: #475569;
+}
+.slider-link-item {
+  text-decoration: none;
+}

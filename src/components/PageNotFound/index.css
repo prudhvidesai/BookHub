@@ -1,0 +1,123 @@
+.pnf-bg-cont {
+  width: 1440px;
+  height: 1024px;
+
+  background: #ffffff;
+}
+.pnf-img {
+  position: absolute;
+  height: 300px;
+  width: 448px;
+  left: 496px;
+  top: 244px;
+  border-radius: 0px;
+}
+.pnf-heading {
+  position: absolute;
+  left: 598px;
+
+  top: 576px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+.pnf-para {
+  position: absolute;
+  left: 449px;
+
+  top: 636px;
+  width: 534px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+
+  text-align: center;
+
+  /* Light / blue-gray / 600 */
+
+  color: #475569;
+}
+.pnf-btn {
+  position: absolute;
+  height: 48px;
+  width: 164px;
+  left: 638px;
+  top: 732px;
+  border-radius: 12px;
+  padding: 12px 24px 12px 24px;
+  background: #0284c7;
+  border-width: 0px;
+  outline: null;
+  color: white;
+}
+.not-found-btn-link {
+  text-decoration: none;
+}
+
+@media (max-width: 360px) {
+  .pnf-bg-cont {
+    width: 360px;
+    height: 640px;
+
+    background: #ffffff;
+  }
+
+  .pnf-img {
+    position: absolute;
+    height: 151.00146484375px;
+    width: 225px;
+    left: 67px;
+    top: 159px;
+    border-radius: 0px;
+  }
+  .pnf-heading {
+    position: absolute;
+    height: 4px;
+    width: 180px;
+    left: 100px;
+    top: 300px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+  }
+  .pnf-para {
+    position: absolute;
+    height: 2px;
+    width: 312px;
+    left: 24px;
+    top: 345px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    /* or 160% */
+
+    text-align: center;
+
+    /* Light / blue-gray / 600 */
+
+    color: #475569;
+  }
+  .pnf-btn {
+    position: absolute;
+    height: 32px;
+    width: 142px;
+    left: 110px;
+    top: 440px;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    background: #0284c7;
+    border-width: 0px;
+    outline: null;
+    color: white;
+  }
+}

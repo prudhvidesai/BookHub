@@ -1,0 +1,80 @@
+.header-sm-shelves-cont {
+  height: 56px;
+  padding-bottom: 5px;
+  width: 360px;
+  background-color: white;
+}
+.logo-sm-shelves-img {
+  margin-left: 24px;
+  margin-top: 16px;
+  width: 92px;
+  height: 24px;
+}
+.bars-shelves-img {
+  position: absolute;
+  left: 320px;
+  top: 24px;
+  width: 20px;
+  height: 14px;
+}
+.ham-shelves-btn {
+  border-width: 0px;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+}
+.sm-ham-menu-items {
+  display: flex;
+  width: 360px;
+  background-color: transparent;
+  align-items: center;
+  position: relative;
+  left: 24px;
+  top: -18px;
+}
+.ham-home {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  letter-spacing: -0.355556px;
+  color: #64748b;
+  margin-right: 16px;
+}
+.ham-bookshelves {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  letter-spacing: -0.355556px;
+  color: #0284c7;
+  margin-right: 24px;
+}
+.ham-logout-btn {
+  padding: 8px 16px;
+  gap: 8px;
+  color: white;
+  font-family: inter;
+  width: 73px;
+  height: 32px;
+  border-width: 0px;
+  background: #0284c7;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 39px;
+}
+.ham-close-btn {
+  cursor: pointer;
+  border-width: 0px;
+  height: 30px;
+  width: 30px;
+}
+.ham-close-icon {
+  height: 22px;
+  width: 22px;
+}
+.link-shelves-header {
+  text-decoration: none;
+}

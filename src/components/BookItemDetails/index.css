@@ -1,0 +1,333 @@
+.book-item-details {
+  height: 1289px;
+  width: 1440px;
+  background: #e5e5e5;
+}
+.sm-book-items-details-view-cont {
+  display: none;
+}
+.sm-bi-header-cont {
+  display: none;
+}
+.book-details-card {
+  position: absolute;
+  width: 1140px;
+  height: 726px;
+  left: 150px;
+  top: 153px;
+  background: white;
+  box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+    0px 1px 2px rgba(96, 97, 112, 0.16);
+  border-radius: 16px;
+}
+.book-cover-data-cont {
+  position: relative;
+  left: 277px;
+  top: 64px;
+  display: flex;
+  width: 60vw;
+}
+
+.cover-book-img {
+  width: 235px;
+  height: 274px;
+  border-radius: 14px;
+}
+.details-text-cont {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 48px;
+  top: 15px;
+  height: 274px;
+  width: 250px;
+}
+.details-title {
+  height: 2px;
+  width: 500px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #334155;
+}
+.details-author {
+  width: 500px;
+  height: 2px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #475569;
+}
+.details-rating {
+  width: 250px;
+  height: 2px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+
+  color: #475569;
+}
+.details-status {
+  width: 400px;
+  height: 2px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #475569;
+}
+.ruler {
+  position: relative;
+  width: 1012px;
+  height: 0px;
+  left: 4px;
+  top: 85px;
+  border: 1px solid #94a3b8;
+}
+.star-img {
+  height: 18px;
+  margin-top: 0px;
+  color: yellow;
+}
+.read-status {
+  color: #0284c7;
+}
+.aa-heading {
+  position: relative;
+  left: 64px;
+  top: 78px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #334155;
+}
+.aa-para {
+  position: relative;
+  left: 64px;
+  top: 68px;
+  width: 95%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #334155;
+}
+.ab-heading {
+  margin-top: 90px;
+  margin-left: 64px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #334155;
+}
+.ab-para {
+  margin-left: 64px;
+  margin-top: 0px;
+  width: 90%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #334155;
+}
+.bd-social-cont {
+  position: absolute;
+  width: 145px;
+  height: 21px;
+  left: 500px;
+  top: 975px;
+}
+.bd-failure-view-cont {
+  position: absolute;
+  left: 586px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bd-loader-container {
+  position: absolute;
+  left: 756px;
+  top: 400px;
+}
+
+@media (max-width: 360px) {
+  .book-item-details {
+    width: 360px;
+    height: 1132px;
+
+    background: #e5e5e5;
+  }
+  .lg-bi-header-cont {
+    display: none;
+  }
+  .lg-book-items-details-view-cont {
+    display: none;
+  }
+  .sm-book-items-details-view-cont {
+    display: block;
+    position: absolute;
+    top: 96px;
+    width: 360px;
+  }
+  .sm-bi-header-cont {
+    display: block;
+  }
+
+  .sm-cover-book-img {
+    width: 235px;
+    height: 274px;
+    border-radius: 14px;
+    position: relative;
+    top: 24px;
+    left: 62px;
+  }
+
+  .sm-details-title {
+    min-width: 180px;
+    max-width: 280px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #334155;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 42px;
+  }
+  .sm-details-author {
+    min-width: 200px;
+    max-width: 360px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #475569;
+    text-align: center;
+    position: relative;
+    top: 5px;
+  }
+  .sm-details-rating {
+    min-width: 200px;
+    max-width: 360px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #475569;
+    text-align: center;
+    position: relative;
+    top: 5px;
+  }
+  .sm-star-img {
+    color: yellow;
+    position: relative;
+    top: 1.5px;
+  }
+  .sm-details-stat {
+    min-width: 200px;
+    max-width: 360px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #475569;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    text-align: center;
+  }
+  .sm-read-stat {
+    color: #0284c7;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .sm-ruler {
+    position: absolute;
+    width: 312px;
+    height: 0px;
+    left: 24px;
+    top: 480px;
+    border: 0.5px solid #94a3b8;
+  }
+  .sm-aa-heading {
+    position: relative;
+    left: 24px;
+    top: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #334155;
+  }
+  .sm-aa-para {
+    position: relative;
+    left: 24px;
+    top: 48px;
+    width: 90%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #334155;
+  }
+  .sm-ab-heading {
+    position: relative;
+    left: 24px;
+    top: 34px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #334155;
+  }
+  .sm-ab-para {
+    position: relative;
+    left: 24px;
+    top: 24px;
+    width: 90%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #334155;
+  }
+  .sm-social-cont {
+    display: block;
+    position: relative;
+    width: 145px;
+    height: 21px;
+    left: 50px;
+    top: 60px;
+  }
+  .bd-loader-container {
+    position: relative;
+    left: 164px;
+    top: 304px;
+  }
+  .bd-failure-view-cont {
+    position: relative;
+    left: 10px;
+    top: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
