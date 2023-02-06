@@ -1,9 +1,8 @@
 .social-footer-cont {
-  width: 300px;
+  width: 155px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .social-icons-cont {
   display: flex;
@@ -19,6 +18,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-
+  text-align: center;
   color: #3d3c3c;
 }

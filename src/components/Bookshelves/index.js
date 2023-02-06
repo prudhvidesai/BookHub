@@ -229,7 +229,7 @@ class Bookshelves extends Component {
         {booksListData.length === 0 ? (
           this.renderSmSearchFailureView()
         ) : (
-          <ul className="all-books-cont">
+          <ul className="all-sm-books-cont">
             {booksListData.map(eachItem => (
               <AllbookItems key={eachItem.id} bookData={eachItem} />
             ))}
@@ -328,7 +328,6 @@ class Bookshelves extends Component {
         <div className="shelf-header-lg-cont">
           <HomeHeader />
         </div>
-
         <ul className="side-bar-cont">
           <h1 className="side-bar-heading">Bookshelves</h1>
           {bookshelvesList.map(eachItem => (

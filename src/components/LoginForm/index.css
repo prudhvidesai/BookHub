@@ -5,6 +5,9 @@
   flex-direction: row;
   background-color: white;
 }
+.header-sm-home-cont {
+  display: none;
+}
 .img-cont {
   position: absolute;
   width: 780px;
@@ -128,19 +131,22 @@
   color: #ef4444;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
   .bg-cont {
     height: 640px;
-    width: 360px;
+    min-width: 360px;
+    max-width: 576px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .sm-website-logo-img {
     display: block;
-    position: absolute;
     width: 216px;
     height: 216px;
-    left: 72px;
-    top: 32px;
   }
   .website-logo-img {
     display: none;
@@ -150,103 +156,166 @@
   }
   .sm-form-logo-img {
     display: block;
-    position: absolute;
     width: 104px;
     height: 28px;
-    left: 128px;
-    top: 264px;
   }
   .sm-login-form-cont {
     display: block;
-
-    height: 320px;
-    position: relative;
-    top: 280px;
-    width: 100vw;
+    min-height: 320px;
+    max-height: 667px;
+    width: 330px;
+    margin-top: 35px;
   }
 
   .sm-user-name-p {
-    position: relative;
-    height: 19px;
-    left: 24px;
-    top: 19px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
     color: #5a7184;
+    margin-bottom: 45px;
   }
   .sm-user-box {
-    position: relative;
-    left: 24px;
-    right: 0px;
-    top: 26px;
-    bottom: 0px;
     height: 56px;
-    width: 312px;
+    min-width: 312px;
     padding-left: 20px;
     background: #ffffff;
     border: 1px solid #c3cad9;
     border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
   .sm-pass-p {
-    position: relative;
-    height: 19px;
-    left: 24px;
-
-    top: 32px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
-
     color: #5a7184;
+    min-width: 320px;
+    margin-bottom: 15px;
   }
   .sm-pas-box {
-    position: relative;
-    left: 24px;
-    right: 0px;
-    top: 36px;
-    bottom: 0px;
     height: 56px;
-    width: 312px;
+    min-width: 312px;
     padding-left: 20px;
     background: #ffffff;
     border: 1px solid #c3cad9;
     border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
   .sm-error-para {
-    position: relative;
-    width: 205px;
-    height: 18px;
-    left: 24px;
-    top: 22px;
-
+    min-width: 205px;
     font-family: 'HK Grotesk';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-
-    /* Light / red / 500 */
-
     color: #ef4444;
   }
   .sm-login-btn {
-    position: relative;
-    left: 24px;
-    right: 0px;
-    top: 42px;
-    bottom: 0px;
     height: 56px;
-    width: 312px;
-
+    min-width: 312px;
     background: #0284c7;
     border-radius: 8px;
     border-width: 0px;
     color: white;
+  }
+}
+@media (min-width: 768px) and (max-width: 820px) {
+  .bg-cont {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sm-website-logo-img {
+    display: block;
+    width: 216px;
+    height: 216px;
+  }
+  .website-logo-img {
+    display: none;
+  }
+  .login-form-cont {
+    display: none;
+  }
+  .sm-form-logo-img {
+    display: block;
+    width: 104px;
+    height: 28px;
+  }
+  .sm-login-form-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 320px;
+    max-height: 667px;
+    width: 70vw;
+    margin-top: 35px;
+    margin-left: 45px;
+  }
+
+  .sm-user-name-p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5a7184;
+    align-self: flex-start;
+    padding-left: 90px;
+  }
+  .sm-user-box {
+    height: 56px;
+    width: 400px;
+    padding-left: 20px;
+    background: #ffffff;
+    border: 1px solid #c3cad9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  .sm-pass-p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5a7184;
+    min-width: 320px;
+
+    align-self: flex-start;
+    padding-left: 90px;
+  }
+  .sm-pas-box {
+    height: 56px;
+    width: 400px;
+    padding-left: 20px;
+    background: #ffffff;
+    border: 1px solid #c3cad9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  .sm-error-para {
+    min-width: 205px;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ef4444;
+    align-self: flex-start;
+    padding-left: 90px;
+  }
+  .sm-login-btn {
+    height: 56px;
+    width: 400px;
+    background: #0284c7;
+    border-radius: 8px;
+    border-width: 0px;
+    color: white;
+    margin-top: 15px;
   }
 }

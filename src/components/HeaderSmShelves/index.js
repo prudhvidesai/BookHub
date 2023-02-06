@@ -1,50 +1,51 @@
 import {Component} from 'react'
 import {Link, withRouter} from 'react-router-dom'
-import {IoMdCloseCircle} from 'react-icons/io'
 import Cookies from 'js-cookie'
+import {IoMdCloseCircle} from 'react-icons/io'
 import './index.css'
 
 class HeaderSmShelves extends Component {
   state = {
-    isHamBtnClicked: false,
+    isHomeHamBtnClicked: false,
   }
 
-  onClickHamBtn = () => {
+  onHomeHamBtnClicked = () => {
     this.setState(prevState => ({
-      isHamBtnClicked: !prevState.isHamBtnClicked,
+      isHomeHamBtnClicked: !prevState.isHomeHamBtnClicked,
     }))
   }
 
-  onClickHamLogout = () => {
+  onClickHomeCloseBtn = () => {
+    this.setState(prevState => ({
+      isHomeHamBtnClicked: !prevState.isHomeHamBtnClicked,
+    }))
+  }
+
+  onClickHomeLogoutBtn = () => {
     const {history} = this.props
     Cookies.remove('jwt_token')
     history.replace('/login')
   }
 
-  onClickCloseBtn = () => {
-    this.setState(prevState => ({
-      isHamBtnClicked: !prevState.isHamBtnClicked,
-    }))
-  }
-
   render() {
-    const {isHamBtnClicked} = this.state
-
+    const {isHomeHamBtnClicked} = this.state
     return (
       <>
         <div className="header-sm-shelves-cont">
-          <Link to="/" className="link-shelves-header">
-            <img
-              src="https://res.cloudinary.com/di7wgaobj/image/upload/v1674648903/Group_7732smheadericon_wa9spv.png"
-              className="logo-sm-shelves-img"
-              alt="website logo"
-            />
-          </Link>
+          <div>
+            <Link to="/" className="link-shelves-header">
+              <img
+                src="https://res.cloudinary.com/di7wgaobj/image/upload/v1674648903/Group_7732smheadericon_wa9spv.png"
+                className="logo-sm-shelves-img"
+                alt="website logo"
+              />
+            </Link>
+          </div>
 
           <button
             type="button"
             className="ham-shelves-btn"
-            onClick={this.onClickHamBtn}
+            onClick={this.onHomeHamBtnClicked}
           >
             <img
               src="https://res.cloudinary.com/di7wgaobj/image/upload/v1674649324/iconbar_oyv9yj.png"
@@ -53,26 +54,27 @@ class HeaderSmShelves extends Component {
             />
           </button>
         </div>
-        {isHamBtnClicked ? (
-          <div className="sm-ham-menu-items">
+        {isHomeHamBtnClicked ? (
+          <div className="sm-shelves-menu-items ">
             <Link to="/" className="link-shelves-header">
-              <p className="ham-home">Home</p>
+              <p className="sm-shelves-home-para">Home</p>
             </Link>
-
-            <p className="ham-bookshelves">Bookshelves</p>
+            <Link to="/shelf" className="link-shelves-header">
+              <p className="sm-shelves-shelves-para">Bookshelves</p>
+            </Link>
             <button
               type="button"
-              className="ham-logout-btn"
-              onClick={this.onClickHamLogout}
+              className="sm-shelves-logout-btn"
+              onClick={this.onClickHomeLogoutBtn}
             >
               Logout
             </button>
             <button
               type="button"
-              className="ham-close-btn"
-              onClick={this.onClickCloseBtn}
+              className="sm-shelves-close-btn"
+              onClick={this.onClickHomeCloseBtn}
             >
-              <IoMdCloseCircle className="ham-close-icon" />
+              <IoMdCloseCircle className="sm-header-home-close-btn" />
             </button>
           </div>
         ) : null}

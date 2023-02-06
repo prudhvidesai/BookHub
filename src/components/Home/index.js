@@ -84,9 +84,10 @@ class Home extends Component {
                 className="book-img"
               />
             </Link>
-
-            <h1 className="home-title">{eachItem.title}</h1>
-            <p className="home-author">{eachItem.authorName}</p>
+            <div className="slide-text-cont">
+              <h1 className="home-title">{eachItem.title}</h1>
+              <p className="home-author">{eachItem.authorName}</p>
+            </div>
           </div>
         ))}
       </Slider>
@@ -192,50 +193,46 @@ class Home extends Component {
     }
     console.log(booksList)
     return (
-      <>
-        <div className="home-bg-cont">
-          <div className="lg-header-cont">
-            <HomeHeader />
-          </div>
-          <div className="sm-header-home-cont">
-            <HeaderSmHome />
-          </div>
-          <h1 className="home-heading">Find Your Next Favorite Books?</h1>
-          <p className="home-para">
-            You are in the right place. Tell us what titles and genres you have
-            enjoyed in the past, and we will give you surprisingly insightful
-            recommendations.
-          </p>
+      <div className="home-bag-cont">
+        <div className="lg-header-cont">
+          <HomeHeader />
+        </div>
+        <div className="sm-header-home-cont">
+          <HeaderSmHome />
+        </div>
+        <h1 className="home-heading">Find Your Next Favorite Books?</h1>
+        <p className="home-para">
+          You are in the right place. Tell us what titles and genres you have
+          enjoyed in the past, and we will give you surprisingly insightful
+          recommendations.
+        </p>
+        <button
+          type="button"
+          className="sm-home-find-btn"
+          onClick={this.onClickFindBooksBtn}
+        >
+          Find Books
+        </button>
+        <div className="top-rated-books-cont">
+          <h1 className="top-books-heading">Top Rated Books</h1>
           <button
             type="button"
-            className="sm-home-find-btn"
+            className="home-find-btn"
             onClick={this.onClickFindBooksBtn}
           >
             Find Books
           </button>
-
-          <div className="top-rated-books-cont">
-            <h1 className="top-books-heading">Top Rated Books</h1>
-            <button
-              type="button"
-              className="home-find-btn"
-              onClick={this.onClickFindBooksBtn}
-            >
-              Find Books
-            </button>
-          </div>
-          <div className="lg-slider-books-cont">
-            {this.renderLargeTopRatedBooks()}
-          </div>
-          <div className="sm-slider-books-cont">
-            {this.renderSmallTopRatedBooks()}
-          </div>
-
-          <div className="home-social-cont">
-            <Footer />
-          </div>
         </div>
-      </>
+        <div className="lg-slider-books-cont">
+          {this.renderLargeTopRatedBooks()}
+        </div>
+        <div className="sm-slider-books-cont">
+          {this.renderSmallTopRatedBooks()}
+        </div>
+        <div className="home-social-cont">
+          <Footer />
+        </div>
+      </div>
     )
   }
 }

@@ -32,11 +32,14 @@ class HeaderSmHome extends Component {
     return (
       <>
         <div className="header-sm-home-cont">
-          <img
-            src="https://res.cloudinary.com/di7wgaobj/image/upload/v1674648903/Group_7732smheadericon_wa9spv.png"
-            className="logo-sm-home-img"
-            alt="website logo"
-          />
+          <div>
+            <img
+              src="https://res.cloudinary.com/di7wgaobj/image/upload/v1674648903/Group_7732smheadericon_wa9spv.png"
+              className="logo-sm-home-img"
+              alt="website logo"
+            />
+          </div>
+
           <button
             type="button"
             className="ham-home-btn"

@@ -1,7 +1,9 @@
-.home-bg-cont {
+.home-bag-cont {
   background-color: #e5e5e5;
   height: 1024px;
   width: 1440px;
+  display: flex;
+  flex-direction: column;
 }
 .sm-header-home-cont {
   display: none;
@@ -112,11 +114,9 @@
   list-style: none;
 }
 .home-social-cont {
+  align-self: center;
   position: absolute;
-  width: 145px;
-  height: 21px;
-  left: 647px;
-  top: 899px;
+  top: 850px;
 }
 .contact-para {
   position: relative;
@@ -171,17 +171,35 @@
   top: 300px;
 }
 
-@media (max-width: 360px) {
-  .home-bg-cont {
+@media (max-width: 576px) {
+  .home-bag-cont {
+    height: 640px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     background-color: #e5e5e5;
-    height: 685px;
-    width: 360px;
   }
   .lg-header-cont {
     display: none;
   }
   .sm-header-home-cont {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 56px;
+  }
+  .logo-sm-home-img {
+    width: 92px;
+    height: 24px;
+  }
+  .bars-home-img {
+    width: 20px;
+    height: 14px;
+  }
+  .ham-home-btn {
+    border-width: 0px;
+    background-color: transparent;
   }
 
   .home-heading {
@@ -201,20 +219,17 @@
   }
   .home-para {
     position: absolute;
-    width: 312px;
+    width: 85vw;
     height: 96px;
     left: 24px;
     top: 120px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-
     display: flex;
     align-items: center;
-
     color: #475569;
   }
   .sm-home-find-btn {
@@ -234,9 +249,10 @@
     cursor: pointer;
   }
   .top-rated-books-cont {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 360px;
+    width: 100vw;
     height: 203px;
     left: 0px;
     top: 314px;
@@ -245,37 +261,37 @@
       0px 0.443396px 0.886792px rgba(96, 97, 112, 0.16);
   }
   .top-books-heading {
-    position: relative;
     width: 130px;
-    height: 24px;
-    left: 24px;
-    top: 6px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-
-    /* Light / blue-gray / 800 */
-
     color: #1e293b;
+    position: relative;
+    top: 7px;
+    left: 24px;
   }
   .home-find-btn {
     display: none;
   }
 
   .slider-cont {
-    width: 136px;
+    width: 30vw;
+    height: 99px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+  .slide-text-cont {
+    width: 30vw;
+
+    text-align: center;
+  }
 
   .book-img {
-    width: 136px;
+    width: 30vw;
     height: 99px;
   }
   .home-title {
@@ -283,10 +299,6 @@
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-
-    /* identical to box height, or 133% */
-    text-align: center;
-    /* Light / blue-gray / 700 */
     color: #334155;
     min-width: 120px;
   }
@@ -297,9 +309,6 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 0px;
-    /* identical to box height, or 114% */
-    text-align: center;
-    /* Light / blue-gray / 600 */
     color: #475569;
   }
   .lg-slider-books-cont {
@@ -308,12 +317,12 @@
   .sm-slider-books-cont {
     display: block;
     position: absolute;
-    top: 370px;
+    top: 360px;
     left: 24px;
-    padding-left: 20px;
-    width: 84%;
+    align-self: center;
+    width: 80%;
+    padding-left: 35px;
   }
-
   .slick-prev:before,
   .slick-next:before {
     color: grey;
@@ -328,14 +337,14 @@
     top: 35px;
   }
   .sm-home-failure-view-cont {
-    position: relative;
-    left: 0px;
-    top: -20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 170px;
+    width: 75vw;
+    position: relative;
+    top: -5px;
   }
   .sm-failure-image {
     height: 60px;
@@ -364,14 +373,130 @@
   }
 
   .home-social-cont {
-    display: block;
-    position: absolute;
-    width: 145px;
-    height: 21px;
-    left: 50px;
-    top: 550px;
+    top: 555px;
   }
   .sm-slider-link {
     text-decoration: none;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: grey;
+    position: absolute;
+    top: -22px;
+    left: -22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 820px) {
+  .home-bag-cont {
+    width: 100vw;
+    height: 100vh;
+  }
+  .lg-header-cont {
+    width: 100vw;
+  }
+  .home-para {
+    width: 80vw;
+  }
+  .top-rated-books-cont {
+    width: 80vw;
+    top: 320px;
+  }
+  .lg-slider-books-cont {
+    display: none;
+  }
+  .home-find-btn {
+    left: 480px;
+  }
+  .sm-slider-books-cont {
+    display: block;
+    position: absolute;
+    top: 435px;
+    left: 135px;
+    align-self: center;
+    width: 70%;
+    padding-left: 35px;
+  }
+  .slide-text-cont {
+    width: 250px;
+
+    text-align: center;
+  }
+
+  .book-img {
+    width: 244px;
+    height: 180px;
+  }
+  .home-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+    min-width: 120px;
+  }
+  .home-author {
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0px;
+    color: #475569;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: grey;
+    position: absolute;
+    left: -8px;
+    right: -8px;
+    margin-left: 0px;
+  }
+  .loader-container {
+    display: none;
+  }
+  .sm-loader-container {
+    position: relative;
+    left: 230px;
+    top: 35px;
+  }
+
+  .home-failure-view-cont {
+    display: none;
+  }
+  .sm-home-failure-view-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    width: 75vw;
+    position: relative;
+    top: 25px;
+    left: -20px;
+  }
+  .sm-failure-image {
+    height: 150px;
+  }
+  .sm-failure-para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #475569;
+  }
+  .sm-home-try-btn {
+    width: 85px;
+    height: 30px;
+    background: #0284c7;
+    border-radius: 12px;
+    border-width: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.33333px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #ffffff;
   }
 }

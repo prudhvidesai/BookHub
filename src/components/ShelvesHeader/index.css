@@ -1,22 +1,21 @@
 .header-cont {
-  width: 1440px;
+  width: 100vw;
   height: 89px;
   background: #ffffff;
   border: 1px solid #e4e7eb;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .logo-img {
-  position: relative;
-  left: 150px;
+  margin-left: 24px;
   width: 133px;
   height: 41px;
   padding-left: 0px;
-  margin-left: 0px;
 }
 .header-active-home {
   width: 46px;
-  height: 24px;
+  padding-top: 10px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -27,7 +26,7 @@
 }
 .header-home {
   width: 46px;
-  height: 24px;
+  padding-top: 10px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -38,9 +37,8 @@
 }
 .header-active-shelves {
   width: 96px;
-  height: 24px;
-  left: 1089px;
-  top: 33px;
+  padding-top: 10px;
+
   margin-right: 32px;
   font-family: 'Inter';
   font-style: normal;
@@ -55,19 +53,14 @@
 }
 .header-shelves {
   width: 96px;
-  height: 24px;
-  left: 1089px;
-  top: 33px;
+  padding-top: 10px;
+
   margin-right: 32px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-
-  /* Light / blue-gray / 500 */
-
   color: #64748b;
 }
 .logout-shelves-header-btn {
@@ -89,7 +82,7 @@
 }
 .shelves-nav-cont {
   display: flex;
-  margin-left: 736px;
+
   padding-left: 0px;
   list-style: none;
   margin-top: 0px;

@@ -72,29 +72,31 @@ class BookItemDetails extends Component {
       aboutBook,
     } = bookDetailsList
     return (
-      <div className="book-details-card">
-        <div className="book-cover-data-cont">
-          <img src={coverPic} className="cover-book-img" alt={title} />
-          <div className="details-text-cont">
-            <h1 className="details-title">{title}</h1>
-            <p className="details-author">{authorName}</p>
-            <p className="details-rating">
-              Avg Rating: <BsFillStarFill className="star-img" /> {rating}
-            </p>
-            <p className="details-status">
-              Status: <span className="read-status">{readStatus}</span>
-            </p>
+      <>
+        <div className="book-details-card">
+          <div className="book-cover-data-cont">
+            <img src={coverPic} className="cover-book-img" alt={title} />
+            <div className="details-text-cont">
+              <h1 className="details-title">{title}</h1>
+              <p className="details-author">{authorName}</p>
+              <p className="details-rating">
+                Avg Rating: <BsFillStarFill className="star-img" /> {rating}
+              </p>
+              <p className="details-status">
+                Status: <span className="read-status">{readStatus}</span>
+              </p>
+            </div>
+          </div>
+          <hr className="ruler" />
+          <h1 className="aa-heading">About Author</h1>
+          <p className="aa-para">{aboutAuthor}</p>
+          <h1 className="ab-heading">About Book</h1>
+          <p className="ab-para">{aboutBook}</p>
+          <div className="bd-social-cont">
+            <Footer />
           </div>
         </div>
-        <hr className="ruler" />
-        <h1 className="aa-heading">About Author</h1>
-        <p className="aa-para">{aboutAuthor}</p>
-        <h1 className="ab-heading">About Book</h1>
-        <p className="ab-para">{aboutBook}</p>
-        <div className="bd-social-cont">
-          <Footer />
-        </div>
-      </div>
+      </>
     )
   }
 
@@ -196,20 +198,22 @@ class BookItemDetails extends Component {
     }
     console.log(bookDetailsList)
     return (
-      <div className="book-item-details">
-        <div className="lg-bi-header-cont">
-          <HomeHeader />
+      <>
+        <div className="book-item-details">
+          <div className="lg-bi-header-cont">
+            <HomeHeader />
+          </div>
+          <div className="sm-bi-header-cont">
+            <HeaderSmBd />
+          </div>
+          <div className="lg-book-items-details-view-cont">
+            {this.renderLgBookItemDetailsView()}
+          </div>
+          <div className="sm-book-items-details-view-cont">
+            {this.renderSmBookItemDetailsView()}
+          </div>
         </div>
-        <div className="sm-bi-header-cont">
-          <HeaderSmBd />
-        </div>
-        <div className="lg-book-items-details-view-cont">
-          {this.renderLgBookItemDetailsView()}
-        </div>
-        <div className="sm-book-items-details-view-cont">
-          {this.renderSmBookItemDetailsView()}
-        </div>
-      </div>
+      </>
     )
   }
 }
